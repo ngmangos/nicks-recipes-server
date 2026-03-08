@@ -1,11 +1,11 @@
 from pydantic import BaseModel
 
 class User(BaseModel):
-    id: int
+    id: str
     name: str
 
 class Recipe(BaseModel):
-    id: int
+    id: str
     title: str
 
 class RecipeCreate(BaseModel):

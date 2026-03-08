@@ -3,7 +3,7 @@ import os
 
 def load_data(file):
     if not os.path.exists(file):
-        return []
+        return {}
 
     with open(file) as f:
         return json.load(f)

@@ -1,8 +1,10 @@
-from repositories.recipes import save_new_recipe, fetch_recipe
+from repositories.recipes import store_recipe, fetch_recipe
 from schemas import RecipeCreate
+import uuid
 
 def create_recipe(recipe: RecipeCreate):
-    return save_new_recipe(recipe)
+    recipe_id = str(uuid.uuid4())
+    return store_recipe(Recipe(id=recipe_id, title=recipe.title))
 
 def get_recipe(recipe_id: int):
     return fetch_recipe(recipe_id)

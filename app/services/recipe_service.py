@@ -1,5 +1,5 @@
 from repositories.recipes import store_recipe, fetch_recipe
-from schemas import RecipeCreate
+from schemas.recipes import RecipeCreate
 import uuid
 
 def create_recipe(recipe: RecipeCreate):

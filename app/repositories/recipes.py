@@ -1,5 +1,5 @@
 from utils.json_store import load_data, save_data
-from schemas import Recipe
+from schemas.recipes import Recipe
 
 FILE = "data/recipes.json"
 

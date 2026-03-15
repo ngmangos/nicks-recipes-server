@@ -1,5 +1,5 @@
 from utils.json_store import load_data, save_data
-from schemas import User
+from schemas.users import User
 
 FILE = "data/users.json"
 
